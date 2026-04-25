@@ -1,13 +1,10 @@
-# Repository README
-
-````md
 # Code Agents
 
-GitHub Copilot, Codex and Claude Code custom agents for reviewing and modernizing Angular codebases.
+Codex, Claude Code and GitHub Copilot custom agents for reviewing and modernizing Angular codebases.
 
-This repository provides reusable Copilot agents focused on practical Angular modernization, template maintainability, accessibility, and component-level refactoring opportunities.
+This repository provides reusable agents focused on practical Angular modernization, template maintainability, accessibility, and component-level refactoring opportunities.
 
-The agents were created from real-world usage in Angular projects that migrated from Angular 15 to newer versions and need a safe, incremental way to adopt modern Angular features without unnecessary rewrites.
+The agents were created from real-world usage in Angular projects that migrated from Angular old versions to newer versions and need a safe, incremental way to adopt modern Angular features without unnecessary rewrites.
 
 ## Why this exists
 
@@ -15,16 +12,16 @@ Many Angular codebases upgrade framework versions but do not immediately adopt n
 
 This repository helps teams answer a practical question:
 
-> When I touch this file, is there a modernization opportunity that is actually worth applying now?
+> When I touch this file, is there a improvement opportunity that is actually worth applying now?
 
 The goal is not to force new syntax everywhere. The goal is to support scoped, high-signal reviews that improve maintainability, accessibility, readability, and performance.
 
 ## Included agents
 
 | Agent | Purpose |
-|---|---|
-| [`ng-template-reviewer`](./agents/ng-template-reviewer/README.md) | Reviews Angular templates for complexity, logic-heavy HTML, modern control flow, `@defer`, `@let`, self-closing tags, expensive bindings, and structural accessibility. |
-| [`ng-component-reviewer`](./agents/ng-component-reviewer/README.md) | Reviews Angular component classes for practical modernization through Angular 19, including standalone readiness, `inject()`, signal-based APIs, state simplification, lazy-loading candidates, and scoped refactor opportunities. |
+|------|---------|
+| [`ng-template-reviewer`](./agents/ng-template-reviewer/README.md) | Reviews Angular templates focusing on complexity, logic-heavy HTML, modern control flow (`@if`, `@for`), `@let`, `@defer` opportunities, self-closing tags, expensive bindings, and structural accessibility. |
+| [`ng-component-reviewer`](./agents/ng-component-reviewer/README.md) | Reviews Angular component classes for practical modernization (Angular 19), including standalone readiness, `inject()`, signal-based APIs (`input()`, `output()`, queries), state simplification, lazy-loading opportunities, and scoped refactor suggestions. |
 
 ## Agents vs Skills
 
@@ -165,9 +162,3 @@ Good contributions include:
 * PO-UI-specific review rules
 * accessibility-focused improvements
 * skills for repeatable Angular workflows
-
-## License
-
-MIT
-
-````
