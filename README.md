@@ -20,8 +20,8 @@ The goal is not to force new syntax everywhere. The goal is to support scoped, h
 
 | Agent | Purpose |
 |------|---------|
-| [`ng-template-reviewer`](./agents/ng-template-reviewer/README.md) | Reviews Angular templates focusing on complexity, logic-heavy HTML, modern control flow (`@if`, `@for`), `@let`, `@defer` opportunities, self-closing tags, expensive bindings, and structural accessibility. |
-| [`ng-component-reviewer`](./agents/ng-component-reviewer/README.md) | Reviews Angular component classes for practical modernization (Angular 19), including standalone readiness, `inject()`, signal-based APIs (`input()`, `output()`, queries), state simplification, lazy-loading opportunities, and scoped refactor suggestions. |
+| [`ng-template-reviewer`](./.github/agents/ng-template-reviewer/README.md) | Reviews Angular templates focusing on complexity, logic-heavy HTML, modern control flow (`@if`, `@for`), `@let`, `@defer` opportunities, self-closing tags, expensive bindings, and structural accessibility. |
+| [`ng-component-reviewer`](./.github/agents/ng-component-reviewer/README.md) | Reviews Angular component classes for practical modernization (Angular 19), including standalone readiness, `inject()`, signal-based APIs (`input()`, `output()`, queries), state simplification, lazy-loading opportunities, and scoped refactor suggestions. |
 
 ## Agents vs Skills
 
